@@ -18,9 +18,6 @@ const oracoes = {
     oJesus: `Ó meu Jesus, perdoai-nos e livrai-nos do fogo do inferno,
     levai as almas todas para o céu,
     principalmente as que mais precisarem da vossa misericórdia.`
-
-   
-
 };
 
 // Definição de todos os mistérios
@@ -64,13 +61,7 @@ let indiceMisterio = 0;
 let oracaoAtual = 0; // 0 = Pai Nosso, 1-10 = Ave Maria, 11 = Glória, 12 = Ó Jesus
 
 // Armazenamento temporário de imagens fictícias para desenvolvimento
-const imagensMisterios = [
-    [ "images/misterio1_1.jpg", "images/misterio1_2.jpg", "images/misterio1_3.jpg", "images/misterio1_4.jpg", "images/misterio1_5.jpg" ],
-    [ "images/misterio2_1.jpg", "images/misterio2_2.jpg", "images/misterio2_3.jpg", "images/misterio2_4.jpg", "images/misterio2_5.jpg" ],
-    [ "images/misterio3_1.jpg", "images/misterio3_2.jpg", "images/misterio3_3.jpg", "images/misterio3_4.jpg", "images/misterio3_5.jpg" ],
-    [ "images/misterio4_1.jpg", "images/misterio4_2.jpg", "images/misterio4_3.jpg", "images/misterio4_4.jpg", "images/misterio4_5.jpg" ],
-    [ "images/misterio5_1.jpg", "images/misterio5_2.jpg", "images/misterio5_3.jpg", "images/misterio5_4.jpg", "images/misterio5_5.jpg" ]
-];
+const imagensMisterios = {};
 
 // Inicializar banco de imagens fictícias
 function inicializarImagensFicticias() {
