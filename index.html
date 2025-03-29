@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rosário App</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Rosário Online</h1>
+        
+        <div id="etapa-container">
+            <div id="etapa-texto">Iniciando o Rosário</div>
+        </div>
+        
         <h2 id="titulo-misterio">Mistérios Gozosos: A Anunciação do Anjo a Maria</h2>
 
         <div id="rosario-container">
-            <div id="contas"></div> <!-- Aqui serão criadas as contas dinamicamente -->
+            <div id="contas-iniciais"></div>
+            <div id="contas"></div>
         </div>
 
         <div id="oracao-container">
-            <div id="contador-romano"></div> <!-- Aqui vai o número romano -->
-            <div id="oracao-texto"></div> <!-- Aqui fica a oração -->
-        </div>        
-          
+            <div id="contador-romano"></div>
+            <div id="oracao-texto"></div>
+        </div>
+        
+        <div id="controles">
+            <button id="btn-anterior" title="Oração anterior"><i class="fas fa-arrow-left"></i></button>
+            <button id="btn-proximo" title="Próxima oração"><i class="fas fa-arrow-right"></i></button>
+            <button id="btn-audio" title="Ouvir oração"><i class="fas fa-volume-up"></i></button>
+        </div>
+        
+        <div id="selecao-misterios">
+            <select id="tipo-misterio">
+                <option value="gozosos">Mistérios Gozosos</option>
+                <option value="dolorosos">Mistérios Dolorosos</option>
+                <option value="gloriosos">Mistérios Gloriosos</option>
+                <option value="luminosos">Mistérios Luminosos</option>
+            </select>
+        </div>
+        
+        <div id="progresso">
+            <span id="progresso-texto">Iniciando o Rosário</span>
+            <div id="barra-progresso">
+                <div id="progresso-preenchido"></div>
+            </div>
+        </div>
     </div>
 
     <script src="scripts/script.js" defer></script>
