@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#rosario-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contas {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.conta {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 1px solid gray;
+    transition: background-color 0.3s;
+}
+
+.conta.maior {
+    width: 20px;
+    height: 20px;
+    background-color: darkgray;
+}
+
+.conta.ativa {
+    background-color: blue;
+}
+
+.conta:hover {
+    background-color: lightblue;
+}
+
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#oracao {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#oracao-container {
+    width: 100%;
+    height: 500px; /* Defina um tamanho mínimo para exibir a imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+
+#contador-romano {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+
+#oracao-completa {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
